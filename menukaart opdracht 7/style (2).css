@@ -1,0 +1,96 @@
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 90px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.food-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+
+.food-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.food-card h2 {
+  margin: 10px 0;
+}
+
+.food-card p1 {
+  margin: 5px 0;
+  color: #7f7f7f;
+}
+.prijs {
+  font-weight: bold;
+  position: absolute;
+  left: 15px;.food-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;  /* centrum */
+}
+
+.food-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 60px; /* ruimte voor prijs en button */
+}
+
+.food-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.food-card h2 {
+  margin: 10px 0;
+}
+
+.food-card p {
+  margin: 5px 0;
+  color: #7f7f7f;
+}
+
+.prijs {
+  font-weight: bold;
+  position: absolute;
+  right: 15px;  /* rechtsonder */
+  bottom: 15px;
+}
+
+.bestel-knop {
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  left: 15px;  /* linksonder */
+  bottom: 15px;
+}
+
+  bottom: 15px;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
