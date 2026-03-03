@@ -119,4 +119,19 @@ body.oranje {
 }
 
 
+#blok { 
+    width: 600px;
+    height: 500px;
+    background-color: rgb(223, 223, 223);
+    position: relative;
+    margin: 60px 50px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px 20px;
+    space
+}
+#Space {
+    margin: 20px 0px 0px 0px;
+
+}
 
