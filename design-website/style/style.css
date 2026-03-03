@@ -72,3 +72,51 @@ body {
 main {
     padding: 20px 50px;
 }
+
+body.oranje {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(250, 108, 52);
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    font-family: Arial, sans-serif;
+}
+
+
+.begin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    transform: translateY(-60px); 
+}
+
+.begin-logo {
+    width: 400px;
+    height: 400px;
+    background-image: url("../media/vista logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px 35px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 22px;
+    transition: 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
