@@ -1,2 +1,1 @@
-The victims of Diddy
-
+DO NOT LET MONEY BE YOUR GOD 
