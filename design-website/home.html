@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mijn website</title>
+</head>
+<body>
+    <h1>Welkom op mijn website</h1>
+    <p>Dit is mijn nieuwe website.ik ben kapital en ik ben de sterkste </p>
+</body>67</a>
+  <div>
+    <Button onclick="setLanguage('nl')"><image src="https://www.publicdomainpictures.net/pictures/340000/velka/national-flag-of-netherlands-1588674985fyW.jpg" alt="Nederlandse vlag" width="50" height="30"></button>
+    <Button onclick="setLanguage('en')"><image src="https://countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png" alt="UK vlag" width="50" height="30"></button>
+  </div>
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'nl') {
+        document.querySelector('h1').textContent = 'Welkom op mijn website';
+        document.querySelector('p').textContent = 'Dit is mijn nieuwe website.Ik ben kapital en ik ben de sterkste';
+      } else if (lang === 'en') {
+        document.querySelector('h1').textContent = 'Welcome to my website';
+        document.querySelector('p').textContent = 'This is my new website.I am kapital and I am the strongest';
+      }
+    } 
+  </script>
+</body>
