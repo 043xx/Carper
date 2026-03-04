@@ -8,6 +8,7 @@ body {
     background-color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
     padding-top: 100px; 
+  
 }
 
 
@@ -120,18 +121,173 @@ body.oranje {
 
 
 #blok { 
-    width: 600px;
-    height: 500px;
+    width: 620px;
+    height: 700px;
     background-color: rgb(223, 223, 223);
     position: relative;
     margin: 60px 50px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding: 20px 20px;
-    space
-}
-#Space {
-    margin: 20px 0px 0px 0px;
-
+    
 }
 
+
+#title2 {
+    margin: 20px 0px 0px 0px ;
+}   
+
+#tekst1 {
+    margin: 20px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#tekst2 {
+    margin: 10px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#tekst3 {
+    margin: 2px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#tekst4 {
+    margin: 2px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#title3 {
+    margin: 10px 0px 0px 0px ;
+}
+
+#tekst5 {
+    margin: 10px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#title4 {
+    margin: 10px 0px 0px 0px ;
+}
+
+#tekst6 {
+    margin: 10px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#tekst7 {
+    margin: 1px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#tekst8 {
+    margin: 1px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#tekst9 {
+    margin: 1px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#tekst10 {
+    margin: 5px 0px 0px 0px ;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.foto1 {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    left: 800px;
+}
+
+.foto2 {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    left: 800px;
+}
+
+.button-NL {
+  position: fixed;
+  top: 4%;
+  left: 75%;
+  z-index: 3000;
+  background-color: #FA6C34;
+}
+
+.button-EN {
+  position: fixed;
+  top: 4%;
+  left: 80%;
+  background-color: #FA6C34;
+  z-index: 3000;
+}
+.site-footer {
+  background: #000; /* zwart */
+  color: #fff; /* wit tekst */
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-top: 4px solid #FA6C34; /* oranje accent */
+}
+
+.site-footer .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-footer .brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  padding: 4px;
+}
+
+.site-footer h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.site-footer .accent {
+  color: #FA6C34; /* oranje */
+  font-weight: 700;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer .right {
+  text-align: right;
+}
