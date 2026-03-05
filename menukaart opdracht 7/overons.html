@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mees Kantine </title>
+    <link rel="stylesheet" href="style copy.css">
+
+</head>
+<body>
+
+<div class="Vierkant">
+<div id ="blok">
+    <h1>Over ons</h1>
+<div id="title2">
+    <h2>Wie zijn wij? - vanuit de kantine</h2>
+
+<p id="tekst1">Wij zijn Mees Catering, de plek waar jij snel iets lekkers scoort tussen je lessen door op
+ We zorgen voor een fijne kantine met goed eten voor een goede prijs.</p>
+
+ <p id="tekst2"> Onze doelgroep: vooral studenten, maar ook docenten en medewerkers.</p>
+
+ <p id="tekst3"> Wat we verkopen: verse broodjes, snacks, soepen, fruit, koffie, thee, en genoeg vegetarische opties.</p>
+ 
+<p id="tekst4">Wat we daarvoor doen: snel werken, betaalbaar blijven en inspelen op wat jullie lekker, makkelijk en chill vinden.</p>
+
+<div id="title3">
+    <h2>Wie zijn wij? - Vanuit de doelgroep (studenten)</h2>
+
+<p id="tekst5">Wij zijn Vista-studenten: altijd druk, altijd onderweg. We willen eten dat lekker, betaalbaar en snel is.</p>
+  
+<div id="title4">
+    <h2>Wat we willen:</h2>
+
+<p id="tekst6">Goede prijzen</p>
+
+<p id="tekst7">Snelle service</p>
+
+<p id="tekst8">Afwisseling</p>
+
+<p id="tekst9">Gezonde en lekkere keuzes</p>
+
+<p id="tekst10">Wat we belangrijk vinden: dat de kantine er fris uitziet, duidelijk is, en eten aanbiedt dat past bij onze lifestyle. </p>
+
+</div>
+<div>
+<img src="kantine foto2.png" class="foto1">
+<img src="foto kantine1.png" class="foto2">
+</div>
+
+
+    <div class="bar"> 
+        <div class="left">
+            <div id="logo"></div>
+            <h2>MEES</h2>
+        </div>
+
+        
+        <nav class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="overons.html">Over ons</a>
+        </nav>
+    </div>
+    
+    <div>
+    <div class="button-NL">
+  <button onclick="setLanguage('nl')">
+    <img src="vlag-NL-menukaart.png" alt="Nederlandse vlag" width="50" height="30">
+  </button>
+  </div>
+
+  <div class="button-EN">
+  <button onclick="setLanguage('en')">
+    <img src="vlag-engels-menukaart.png" alt="engelse vlag" width="50" height="30">
+  </button>
+  </div>
+</div>
+
+
+<div id="google_translate_element" style="display:none;"></div>
+
+ <script>
+   <div id="google_translate_element"></div>
+
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {pageLanguage: 'nl', includedLanguages: 'nl,en'},
+    'google_translate_element'
+  );
+}
+</script>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: 'nl', includedLanguages: 'nl,en' },
+    'google_translate_element'
+  );
+}
+
+function setLanguage(lang) {
+  const select = document.querySelector(".goog-te-combo");
+  if (select) {
+    select.value = lang;
+    select.dispatchEvent(new Event("change"));
+  }
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+   
+</body>
+</html>
