@@ -8,12 +8,75 @@
 </head>
 <body>
 
+        <div class="bar"> 
+        <div class="left">
+            <div id="logo"></div>
+            <h2>MEES</h2>
+        </div>
+
+        
+        <nav class="nav-right">
+            <a href="pagina1.html">Home</a>
+            <a href="pagina2.html">Over ons</a>
+        </nav>
+    </div>
+
+
 <div class="food-container">
 
     <div class="food-card">
         <img src="broodje-gezond mees.jpg" alt="broodje gezond">
         <h2>Broodje gezond</h2>
         <p>Een heerlijk broodje gezond met verse groenten, kaas en ham. Perfect voor een snelle lunch!</p>
+        <p class="prijs">€4,10</p>
+        <button class="bestel-knop">🛒 Voeg toe</button>
+    </div>
+
+    <div class="food-card">
+        <img src="broodje-hete-kip.jpg" alt="broodje pittige kip">
+        <h2>Broodje pittige kip</h2>
+        <p>Een smakelijk broodje met pittige kip, sla en saus. Voor liefhebbers van een beetje pit!</p>
+        <p class="prijs">€4,55</p>
+        <button class="bestel-knop">🛒 Voeg toe</button>
+    </div>
+
+    <div class="food-card">
+        <img src="broodje-hete-kip.jpg" alt="broodje pittige kip met bacon">
+        <h2>Broodje pittige kip met bacon</h2>
+        <p>Een smakelijk broodje met pittige kip, bacon, sla en saus. Voor liefhebbers van een beetje pit en extra smaak!</p>
+        <p class="prijs">€4,55</p>
+        <button class="bestel-knop">🛒 Voeg toe</button>
+    </div>
+
+    <div class="food-card">
+        <img src="800x600_brie.jpg" alt="broodje brie">
+        <h2>Broodje brie</h2>
+        <p>Een heerlijk broodje brie met verse sla, walnoten en honing. Een perfecte combinatie van zoet en hartig!</p>
+        <p class="prijs">€4,10</p>
+        <button class="bestel-knop">🛒 Voeg toe</button>
+    </div>
+
+    <div class="food-card">
+        <img src="broodje-tonijn.jpg" alt="broodje tonijn">
+        <h2>Broodje tonijn</h2>
+        <p>Een smakelijk broodje met tonijn, sla en mayo. Voor liefhebbers van zeevruchten!</p>
+        <p class="prijs">€4,55</p>
+        <button class="bestel-knop">🛒 Voeg toe</button>
+    </div>
+
+    <div class="food-card">
+        <img src="pyramide-van-waldorn-broodjegezond-1.jpg" alt="broodje gezond bruine bol">
+        <h2>Broodje gezond bruine bol</h2>
+        <p>Een smakelijk broodje bruine bol gezond met ham, kaas, sla en tomaat. Voor liefhebbers van een klassieke combinatie!</p>
+        <p class="prijs">€4,55</p>
+        <button class="bestel-knop">🛒 Voeg toe</button>
+    </div>
+
+
+    <div class="food-card">
+        <img src="Broodje-zalmsalade.jpg" alt="broodje zalmsalade">
+        <h2>Broodje zalmsalade</h2>
+        <p>Een heerlijk broodje zalmsalade met verse groenten. Perfect voor een snelle lunch!</p>
         <p class="prijs">€4,10</p>
         <button class="bestel-knop">🛒 Voeg toe</button>
     </div>
@@ -57,9 +120,107 @@
         <p class="prijs">€4,55</p>
         <button class="bestel-knop">🛒 Voeg toe</button>
     </div>
-
-    
 </div>
 
+<footer class="site-footer">
+    <div class="brand">
+        <img src="vista logo.png" alt="Vista logo">
+        <div>
+            <h3>MEES <span class="accent">Catering</span></h3>
+            <p>Vista College</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <p>Bestellingen: <a href="mailto:mees@vista.nl">mees@vista.nl</a> • Tel: 06-12345678</p>
+        <p>KvK: 12345678</p>
+    </div>
+
+    <div class="right">
+        <p>Volg ons:</p>
+        <p><a href="#">Instagram</a> • <a href="#">Facebook</a></p>
+    </div>
+</footer>
+
+<div id="cart" class="cart">
+    <h2>🛒 Winkelwagen</h2>
+    <ul id="cart-items"></ul>
+    <p class="totaal">Totaal: €<span id="totaal-bedrag">0.00</span></p>
+    <button class="betaal-knop">Betalen</button>
+</div>
+
+<script>
+let totaal = 0;
+const cart = document.getElementById("cart");
+const cartItems = document.getElementById("cart-items");
+const totaalBedrag = document.getElementById("totaal-bedrag");
+
+document.querySelectorAll(".bestel-knop").forEach(button => {
+    button.addEventListener("click", function() {
+        
+        const card = this.closest(".food-card");
+        const naam = card.querySelector("h2").textContent;
+        const prijsText = card.querySelector(".prijs").textContent;
+        const prijs = parseFloat(prijsText.replace("€", "").replace(",", "."));
+
+        totaal += prijs;
+
+        const li = document.createElement("li");
+        li.textContent = naam + " - " + prijsText;
+        cartItems.appendChild(li);
+
+        totaalBedrag.textContent = totaal.toFixed(2);
+
+        cart.classList.add("active"); // winkelwagen tonen
+    });
+});
+</script>
+<div>
+    <div class="button-NL">
+  <button onclick="setLanguage('nl')">
+    <img src="vlag-NL-menukaart.png" alt="Nederlandse vlag" width="50" height="30">
+  </button>
+  </div>
+
+  <div class="button-EN">
+  <button onclick="setLanguage('en')">
+    <img src="vlag-engels-menukaart.png" alt="engelse vlag" width="50" height="30">
+  </button>
+  </div>
+</div>
+
+
+<div id="google_translate_element" style="display:none;"></div>
+  <script>
+   <div id="google_translate_element"></div>
+
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {pageLanguage: 'nl', includedLanguages: 'nl,en'},
+    'google_translate_element'
+  );
+}
+</script>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: 'nl', includedLanguages: 'nl,en' },
+    'google_translate_element'
+  );
+}
+
+function setLanguage(lang) {
+  const select = document.querySelector(".goog-te-combo");
+  if (select) {
+    select.value = lang;
+    select.dispatchEvent(new Event("change"));
+  }
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
+
